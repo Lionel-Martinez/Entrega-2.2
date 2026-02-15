@@ -1,0 +1,17 @@
+
+h2{
+    text-align: left;
+}
+.integrantes_img{
+    width: 200px;
+    float: left;
+}
+p{
+    float: inline-end;
+    text-align: left;
+    margin-right: 1600px;
+    border: 1px solid black;
+}
+footer{
+    float: inline-start;
+}

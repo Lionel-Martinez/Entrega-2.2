@@ -1,0 +1,31 @@
+.navegacion {
+    background-color:#FBCEB1 ;
+    margin-bottom: 20px;
+    margin-right: 0.5px;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: left;
+}
+.datos{
+    text-align: right;
+}
+.discoizquierda{
+    width: 200px;
+    float: left;
+}
+.discoderecha{
+    width: 200px;
+    float: right;
+    margin-top: 0.5px;
+    margin-left: 2000px;
+}
+.canciones{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+

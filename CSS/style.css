@@ -1,0 +1,29 @@
+.navegacion {
+    background-color:#FBCEB1 ;
+    margin-bottom: 20px;
+    margin-right: 0.5px;
+}
+body{
+    background-color: #FF0090;
+}
+h1{
+    text-align: center;   
+}
+main{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    margin: right 20px; ;
+    text-align: left;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo{
+    width: 80px;
+    float: right;  
+    margin-bottom: 10px;
+}
