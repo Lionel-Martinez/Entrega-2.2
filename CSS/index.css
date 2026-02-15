@@ -59,3 +59,26 @@
     max-width: 100%;
     height: auto;
 }
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-card {
+    padding: 0.5rem;   
+    border-radius: 0.5rem;
+}
+
+.social-card:hover {
+    box-shadow: 0.5rem;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.info {
+    background-color: white;
+}
