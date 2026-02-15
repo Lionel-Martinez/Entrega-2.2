@@ -15,21 +15,94 @@
         <a href="../index.html">
             <img src="../IMG/TWICE_LOGO.png" alt="" class="logo">
         </a>
-        <nav class="navegacion">
-            <ul>
-                <a href="../index.html"><li>Home</li></a>
-                <a href="../HTML/discografia.html"><li>Discografia</li></a>
-                <a href="../HTML/Miembros.html"><li>Miembros</li></a>
-            </ul>
-            
-        </nav>
+         <header>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-twice sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../Entrega-2.2/index.html">
+                <img src="../Entrega-2.2/IMG/TWICE_LOGO.png" alt="TWICE Logo" height="50" class="me-2">
+                <span class="brand-text">TWICE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button><a class="nav-link active" href="../Entrega-2.2/index.html">Home</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" href="../Entrega-2.2/HTML/discografia.html">Discografía</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" href="../Entrega-2.2/HTML/miembros.html">Miembros</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+    </header>
     </header>
     <!-- Miembros -->
     <main>
-        <h2>Miembros</h2>
-        <img src="../IMG/Miembros/Jihyo.png " alt="" class="integrantes_img">
-        <p>Park Ji-hyo, más conocida como Jihyo, es una cantautora, modelo y bailarina surcoreana. En 2015, participó en el programa Sixteen, donde compitió para formar parte de Twice.​ Debutó como integrante y líder del grupo en el mismo año, bajo JYP Entertainment.​</p>
+            <div class="member-card mb-5 leader-card">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-3 col-sm-12">
+                        <img src="Jihyo.png" alt="Jihyo" class="img-fluid member-image">
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="d-flex align-items-center mb-2">
+                            <h3 class="member-name mb-0">Park Jihyo (박지효)</h3>
+                            <span class="badge bg-danger ms-3">LEADER</span>
+                        </div>
+                        <span class="member-role badge bg-twice mb-3">Vocalista Principal, Líder</span>
+                        <p class="member-info">
+                            <strong>Fecha de nacimiento:</strong> 1 de febrero de 1997<br>
+                            <strong>Lugar de nacimiento:</strong> Guri, Corea del Sur<br>
+                            <strong>Años de entrenamiento:</strong> 10 años (la más larga en JYP)
+                        </p>
+                        <p class="member-description">
+                            Jihyo es la líder y vocalista principal de TWICE. Entrenó durante 10 años en JYP 
+                            Entertainment, lo que la convierte en la miembro con más tiempo de entrenamiento. 
+                            Es conocida por sus poderosas habilidades vocales y su fuerte presencia en el 
+                            escenario. Como líder, es respetada por su madurez y dedicación al grupo.
+                        </p>
+                    </div>
+                </div>
+            </div>
     </main>
+
+    <!-- informacion grupal -->
+    <section class="group-info-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Datos del Grupo</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="infomacion-grupal">
+                        <h4>🌍 Nacionalidades</h4>
+                        <ul>
+                            <li>Corea del Sur: 5 miembros (Nayeon, Jeongyeon, Jihyo, Dahyun, Chaeyoung)</li>
+                            <li>Japón: 3 miembros (Momo, Sana, Mina)</li>
+                            <li>Taiwán: 1 miembro (Tzuyu)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="infomacion-grupal">
+                        <h4>📅 Línea de Edad</h4>
+                        <ul>
+                            <li>Oldest: Nayeon (1995)</li>
+                            <li>Línea 96: Jeongyeon, Momo, Sana</li>
+                            <li>Línea 97: Jihyo, Mina</li>
+                            <li>Línea 98: Dahyun</li>
+                            <li>Maknae Line: Chaeyoung, Tzuyu (1999)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>

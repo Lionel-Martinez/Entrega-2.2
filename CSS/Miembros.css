@@ -1,17 +1,107 @@
+.members-section {
+    background-color: var(--color-white);
+}
 
-h2{
-    text-align: left;
+.member-card {
+    background: var(--color-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    margin-bottom: var(--spacing-md);
 }
-.integrantes_img{
-    width: 200px;
-    float: left;
+
+.member-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
 }
-p{
-    float: inline-end;
-    text-align: left;
-    margin-right: 1600px;
-    border: 1px solid black;
+
+.leader-card {
+    background: linear-gradient(135deg, #FFF5F5 0%, #FFE4E4 100%);
+    border: 3px solid var(--color-primary);
 }
-footer{
-    float: inline-start;
+
+.member-image {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-base);
+}
+
+.member-image:hover {
+    transform: scale(1.05);
+}
+
+.member-image-placeholder {
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.member-number {
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.member-name {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+.member-role {
+    font-size: 0.9rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.member-info {
+    background: var(--color-white);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-sm) 0;
+    border-left: 4px solid var(--color-primary);
+}
+
+.member-description {
+    color: #555;
+    line-height: 1.8;
+}
+
+.infomacion-grupal {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem;
+    height: 100%;
+}
+
+.infomacion-grupal:hover {
+    box-shadow: 0.5rem;
+}
+
+.infomacion-grupal h4 {
+    color: #FF0090;
+    margin-bottom: 1rem;
+}
+
+.infomacion-grupal ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.infomacion-grupal li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.infomacion-grupal li:last-child {
+    border-bottom: none;
 }
