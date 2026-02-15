@@ -1,0 +1,12 @@
+.bg-twice {
+    box-shadow: 0.5rem;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
