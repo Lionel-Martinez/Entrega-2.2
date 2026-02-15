@@ -1,31 +1,55 @@
-.navegacion {
-    background-color:#FBCEB1 ;
-    margin-bottom: 20px;
-    margin-right: 0.5px;
+.album-card {
+    padding: 2rem;
+    border-radius: 3rem;
 }
-h2{
-    text-align: left;
+
+.album-cover {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
 }
-h3{
-    text-align: left;
+
+.album-titulo {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
-.datos{
-    text-align: right;
+
+.album-fecha {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
-.discoizquierda{
-    width: 200px;
-    float: left;
+
+.album-descripcion {
+    color: white;
+    line-height: 1.8;
 }
-.discoderecha{
-    width: 200px;
-    float: right;
-    margin-top: 0.5px;
-    margin-left: 2000px;
+
+.tracklist {
+    padding: 2rem;
+    border-radius: 2rem;
+    list-style-position: inside;
 }
-.canciones{
-    float: right;
+
+.tracklist li {
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+
+.tracklist li:last-child {
+    border-bottom: none;
+}
+
+.tracklist li:hover {
+    background-color:white;
+    padding-left: 1rem;
+}
+
+.album-placeholder {
+    border-radius: 0.5rem;
+    height: 250px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-
