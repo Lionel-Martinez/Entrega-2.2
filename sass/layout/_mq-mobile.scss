@@ -1,0 +1,53 @@
+//Estilos mobile
+
+@use "../util/Variables" as *;
+@use "../util/mixin" as *;
+
+/* header */
+header{
+    @include flex;
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1.2rem;
+            color:$color-tipo;
+        }
+    }
+}
+
+/* main */
+main{
+    height: 80vh;
+    display: grid;
+    @include grilla(1fr , repeat(3,25%));
+    align-items: center;
+    padding: 1.1 rem;
+    row-gap: 1rem;
+
+    div{
+        img{
+            @include imagen(100%);
+        }
+    }
+}
+
+/* button */
+button{
+    display: flex;
+    align-items: center;
+    width: 9em;
+    height: 3em;
+    border-radius: $radius-pill;
+    font-family: inherit;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
