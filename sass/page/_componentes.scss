@@ -1,0 +1,79 @@
+@use "../util/mixin" as *;
+@use "../util/Variables" as *;
+
+/* navbar */
+.bg-twice{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.navbar {
+    padding: $padding-md;
+}
+
+.navbar-brand {
+    font-weight: $font-weight-bold;
+    font-size: 1.5rem;
+}
+
+.brand-text {
+    color: black;
+    font-weight: $font-weight-extrabold;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: black;
+    font-weight: $font-weight-semibold;
+    margin: $padding-md;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $color-twice;
+        transition: width 0.3s ease;
+    }
+
+    &:hover,
+    &.active {
+        color: $color-twice;
+
+        &::before {
+            width: 100%;
+        }
+    }
+}
+/* Link genérico */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Social card */
+.social-card {
+    padding: $padding-sm;
+    border-radius: $radius-md;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Info block */
+.info {
+    background-color: $color-blanco;
+    padding: $padding-md;
+    border-radius: $radius-sm;
+    margin: $padding-md;
+    border-left: 4px solid $color-twice;
+}
