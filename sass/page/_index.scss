@@ -1,0 +1,19 @@
+//Index
+
+@use "../util/mixin" as*;
+@use "../util/Variables" as *;
+
+/* Sección inicio */
+.inicio-section {
+    padding: $padding-xl;
+    min-height: 500px;
+    @include flex;
+}
+
+/* Imagen de inicio */
+.inicio-img {
+    border-radius: $radius-lg;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
