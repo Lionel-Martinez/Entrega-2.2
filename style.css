@@ -197,4 +197,63 @@ button a {
   height: auto;
 }
 
+/* Tarjeta de album */
+.album-card {
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+/* Portada del album */
+.album-cover {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+/* Textos del album */
+.album-titulo {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.album-fecha {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.album-descripcion {
+  color: white;
+  line-height: 1.8;
+}
+
+/* Lista de canciones */
+.tracklist {
+  padding: 2rem;
+  border-radius: 2rem;
+  list-style-position: inside;
+}
+.tracklist li {
+  padding: 0.5rem;
+  border-bottom: 1px solid white;
+  transition: padding-left 0.2s ease, background-color 0.2s ease;
+}
+.tracklist li:last-child {
+  border-bottom: none;
+}
+.tracklist li:hover {
+  background-color: white;
+  padding-left: 1rem;
+}
+
+/* Placeholder de album */
+.album-placeholder {
+  border-radius: 0.5rem;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

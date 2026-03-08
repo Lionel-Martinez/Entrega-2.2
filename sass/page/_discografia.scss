@@ -1,0 +1,58 @@
+//Pagina discografia
+
+@use "../util/mixin" as*;
+@use "../util/Variables" as *;
+
+/* Tarjeta de album */
+.album-card {
+    padding: $padding-lg;
+    border-radius: $radius-xl;
+}
+/* Portada del album */
+.album-cover {
+    border-radius: $radius-md;
+    width: 100%;
+    height: auto;
+}
+/* Textos del album */
+.album-titulo {
+    color: $color-blanco;
+    font-weight: $font-weight-bold;
+    margin-bottom: $padding-md;
+}
+.album-fecha {
+    color: $color-blanco;
+    font-weight: $font-weight-semibold;
+    margin-bottom: $padding-sm;
+}
+.album-descripcion {
+    color: $color-blanco;
+    line-height: 1.8;
+}
+/* Lista de canciones */
+.tracklist {
+    padding: $padding-lg;
+    border-radius: $radius-xl;
+    list-style-position: inside;
+
+    li {
+        padding: $padding-sm;
+        border-bottom: 1px solid $color-blanco;
+        transition: padding-left 0.2s ease, background-color 0.2s ease;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: $color-blanco;
+            padding-left: $padding-md;
+        }
+    }
+}
+/* Placeholder de album */
+.album-placeholder {
+    border-radius: $radius-md;
+    height: 250px;
+    @include flex;
+}
