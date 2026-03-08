@@ -1,0 +1,34 @@
+//con parametros
+
+@mixin grilla($columm,$row){
+    display: grid;
+    grid-template-columns: $columm;
+    grid-template-rows: $row;
+}
+
+//sin parametros
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin imagen($ancho) {
+    width: $ancho;
+    height: 100%;
+    object-fit: cover;
+}
+
+//Media queries
+@mixin tablet{
+    @media screen and (min-width: 480px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
