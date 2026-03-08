@@ -1,3 +1,12 @@
 //reset
 @use "base/reset";
 
+//util
+
+@use "util/mixin";
+@use "util/Variables";
+
+//layout
+@use "layout/mq-mobile";
+@use "layout/mq-tablet";
+@use "layout/mq-desktop";

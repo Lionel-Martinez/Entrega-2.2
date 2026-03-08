@@ -1,0 +1,29 @@
+//estilos para desktop
+
+@use "../util/mixin" as *;
+@use "../util/Variables" as *;
+
+@media screen and (min-width: $bp-desktop){
+    body{
+        @include grilla(repeat(3, 1fr), repeat(2, 40%));
+        column-gap: 1rem;
+        row-gap: 1rem;
+        padding: 1.1rem;
+    }
+    img{
+        grid-template-columns: span 2;
+        grid-template-rows: span 2;
+    }
+    main{
+        @include grilla(repeat(3, 1fr), repeat(3, 25%));
+        .img-dos, .img-cinco{
+            display: block;
+    }
+        .img-uno, .img-tres{
+            grid-template-rows: span 2;
+        }
+        .img-cinco{
+            grid-template-columns: span 3;
+        }
+    }
+}
