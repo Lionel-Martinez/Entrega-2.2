@@ -256,4 +256,100 @@ button a {
   align-items: center;
 }
 
+/*Tarjeta miembro*/
+.miembros-card {
+  background: #FF0090;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateX(-80px);
+}
+.miembros-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.miembros-card.visible {
+  animation: slideRight 0.6s ease forwards;
+}
+.miembros-card:nth-child(1).visible {
+  animation-delay: 0s;
+}
+.miembros-card:nth-child(2).visible {
+  animation-delay: 0.1s;
+}
+.miembros-card:nth-child(3).visible {
+  animation-delay: 0.2s;
+}
+.miembros-card:nth-child(4).visible {
+  animation-delay: 0.3s;
+}
+.miembros-card:nth-child(5).visible {
+  animation-delay: 0.4s;
+}
+.miembros-card:nth-child(6).visible {
+  animation-delay: 0.5s;
+}
+.miembros-card:nth-child(7).visible {
+  animation-delay: 0.6s;
+}
+.miembros-card:nth-child(8).visible {
+  animation-delay: 0.7s;
+}
+.miembros-card:nth-child(9).visible {
+  animation-delay: 0.8s;
+}
+
+/*Tarjeta líder*/
+.lider-card {
+  border: 3px solid #FF0090;
+}
+
+/* Nombre del miembro */
+.nombre {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Rol del miembro */
+.rol {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+/* Descripción */
+.descripcion {
+  color: white;
+  line-height: 1.8;
+}
+
+/* Información grupal */
+.infomacion-grupal {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+.infomacion-grupal:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.infomacion-grupal h4 {
+  color: #FF0090;
+  margin-bottom: 1rem;
+}
+.infomacion-grupal ul {
+  list-style: none;
+  padding-left: 0;
+}
+.infomacion-grupal li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.infomacion-grupal li:last-child {
+  border-bottom: none;
+}
+
 /*# sourceMappingURL=style.css.map */
