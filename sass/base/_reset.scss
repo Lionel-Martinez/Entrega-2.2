@@ -1,6 +1,15 @@
 /* reset */
+@use "../util/Variables" as *;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: $color-twice;
+}
+
+footer{
+    color: $color-tipo;
 }
