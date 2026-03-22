@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <!-- SEO -->
+    <title>Twice - grupo de Kpop | Home</title>
+    <!-- SEO: descripción para buscadores -->
+    <meta name="description" content="Sitio oficial de TWICE, el grupo femenino de K-pop de JYP Entertainment formado en 2015. Conocé a sus 9 integrantes, su discografía y más.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../Entrega-2.2/style.css">
 </head>
 <body>
     <!-- Navegación -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-twice sticky-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="../Entrega-2.2/index.html">
-                <img src="../Entrega-2.2/IMG/TWICE_LOGO.png" alt="TWICE Logo" height="50" class="me-2">
-                <span class="brand-text">TWICE</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <button><a class="nav-link active" href="../Entrega-2.2/index.html">Home</a></button>
-                    </li>
-                    <li class="nav-item">
-                        <button><a class="nav-link" href="../Entrega-2.2/HTML/discografia.html">Discografía</a></button>
-                    </li>
-                    <li class="nav-item">
-                        <button><a class="nav-link" href="../Entrega-2.2/HTML/miembros.html">Miembros</a></button>
-                    </li>
-                </ul>
-            </div>
-        </div> 
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-twice sticky-top" aria-label="Navegacion Principal">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../Entrega-2.2/index.html">
+                    <!-- Logo -->
+                    <img src="../Entrega-2.2/IMG/TWICE_LOGO.png" alt="TWICE Logo" height="50" class="me-2">
+                    <span class="brand-text">TWICE</span>
+                </a>
+                <!-- Boton hamburguesa (Bootstrap) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Links de navegacion -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Entrega-2.2/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Entrega-2.2/HTML/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Entrega-2.2/HTML/miembros.html">Miembros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
     </header>    
 
     <!-- Inicio -->
     <section>
-        <section class="inicio-section">
+        <section class="inicio-section" aria-label="Portada Twice">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 text-center">
