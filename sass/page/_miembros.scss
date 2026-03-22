@@ -11,38 +11,38 @@
     background: $color-blanco;
     padding: 1.5rem;
     border-radius: $radius-lg;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    @include sombra-card;
     margin-bottom: $padding-lg;
     border-left: 4px solid $color-twice;
     transition: box-shadow 0.3s ease;
 
-    opacity: 0;
-    transform: translateX(-80px);
-
     &:hover {
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-    }
-
-    &.visible {
-        animation: slideRight 0.6s ease forwards;
-    }
-
-    @for $i from 1 through 9 {
-        &:nth-child(#{$i}).visible {
-            animation-delay: #{($i - 1) * 0.1}s;
-        }
+        @include sombra(0.25);
     }
 }
 
+// ── Tarjeta especial del líder ─────────────────────────────
 
 .lider-card {
     border: 3px solid $color-twice;
 }
 
+// ── Imagen del miembro ─────────────────────────────────────
+
+.member-image {
+    width: 100%;
+    height: auto;
+    border-radius: $radius-md;
+    @include sombra(0.15);
+    object-fit: cover;
+}
+
+// ── Textos de la tarjeta ───────────────────────────────────
+
 .nombre {
     color: $color-twice;
     font-weight: $font-weight-bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: $padding-sm;
 }
 
 .rol {
@@ -52,21 +52,22 @@
 }
 
 .descripcion {
-    color: #333;
+    color: $color-texto-oscuro;
     line-height: 1.8;
 }
 
+// ── Bloque de información grupal ──────────────────────────
 
 .infomacion-grupal {
     background: $color-blanco;
     padding: $padding-lg;
     border-radius: $radius-md;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    @include sombra(0.1);
     height: 100%;
     transition: box-shadow 0.3s ease;
 
     &:hover {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        @include sombra(0.2);
     }
 
     h4 {
@@ -82,21 +83,10 @@
     li {
         padding: $padding-sm 0;
         border-bottom: 1px solid $color-borde;
-        color: #333;
+        color: $color-texto-oscuro;
 
         &:last-child {
             border-bottom: none;
         }
-    }
-}
-
-@keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(-80px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }

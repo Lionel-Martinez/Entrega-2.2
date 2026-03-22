@@ -79,3 +79,29 @@
     margin: $padding-md;
     border-left: 4px solid $color-twice;
 }
+.section-title {
+    color: $color-twice;
+    font-weight: $font-weight-bold;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: $color-twice;
+        margin: $padding-sm auto 0;
+        border-radius: 30em;
+    }
+}
+.page-header {
+    background-color: $color-twice;
+    text-align: center;
+    padding: $padding-xl $padding-lg;
+
+    h1 {
+        font-weight: $font-weight-extrabold;
+        letter-spacing: 2px;
+    }
+}

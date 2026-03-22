@@ -5,10 +5,26 @@
 
 @media screen and (min-width: $bp-tablet) {
     .inicio-section {
-        padding: $padding-xl 2rem;
+        padding: $padding-xl $padding-lg;
     }
 
     .social-card {
         padding: $padding-md;
     }
+}
+
+.miembros-card {
+    margin-bottom: $padding-lg;
+    padding: 1.5rem;
+}
+
+
+.album-card{
+    padding: $padding-lg;
+    border-radius: $radius-xl;
+}
+
+.member-image {
+    max-height: 220px;
+    object-fit: cover;
 }
